@@ -45,9 +45,18 @@ namespace ProjectApp.ConditionsTasks
                     Console.WriteLine($"Twój wynik to: {wynik:N2}");
                     break;
                 case 4:
-                    wynik = aToDouble / bToDouble;
-                    Console.WriteLine($"Twój wynik to: {wynik:N2}");
-                    break;             
+                    {
+                        if (bToDouble == 0)
+                        {
+                            Console.WriteLine("Podałeś liczbe zero przez zero się nie dzieli");
+                        }
+                        else
+                        {
+                            wynik = aToDouble / bToDouble;
+                            Console.WriteLine($"Twój wynik to: {wynik:N2}");
+                        }
+                        break;
+                    }
                 default:
                     Console.WriteLine("Podałeś niewłaściwy nr operacji");
                     break;                   
