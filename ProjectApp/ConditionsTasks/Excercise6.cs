@@ -10,13 +10,12 @@ namespace ProjectApp.ConditionsTasks
     {
         public static void Task6()
         {
-
             Console.WriteLine("Please enter height : ");
             var a = Console.ReadLine();
             int aToInt;
             Int32.TryParse(a.ToString(), out aToInt);
 
-            if (aToInt >= 200 )
+            if (aToInt >= 200)
             {
                 Console.WriteLine($"{aToInt} - You are Yeti");
             }
@@ -24,7 +23,6 @@ namespace ProjectApp.ConditionsTasks
             {
                 Console.WriteLine($"{aToInt} - You are not Yeti");
             }
-           
         }
     }
 }

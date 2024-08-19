@@ -28,16 +28,16 @@ namespace ProjectApp.DataTypesTasks.DataTypes
                     Excercise2.Task2();
                     break;
                 case '3':
-                    Console.WriteLine("You have choosen task 1");
+                    Console.WriteLine("You have choosen task 3");
                     Excercise3.Task3();
 
                     break;
                 case '4':
-                    Console.WriteLine("You have choosen task 1");
+                    Console.WriteLine("You have choosen task 4");
                     Excercise4.Task4();
                     break;
                 case '5':
-                    Console.WriteLine("You have choosen task 1");
+                    Console.WriteLine("You have choosen task 5");
                     Excercise5.Task5();
                     break;
                 default:

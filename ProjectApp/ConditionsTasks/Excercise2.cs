@@ -15,12 +15,8 @@ namespace ProjectApp.ConditionsTasks
             int aToInt;
             Int32.TryParse(a.ToString(), out aToInt);
 
-            if (aToInt == 0)
-            {
-                Console.WriteLine("You entered wrong number");
-            }
-            else
-            if (aToInt % 2 == 0)
+
+            if ((aToInt == 0)||(aToInt % 2 == 0))
             {
                 Console.WriteLine($"The number {aToInt} is even ");
             }

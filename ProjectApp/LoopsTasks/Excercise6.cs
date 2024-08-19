@@ -15,15 +15,16 @@ namespace ProjectApp.LoopsTasks
             var a = Console.ReadLine();
             Console.WriteLine("");
             int aToInt;
-            float sum = 0;
+            double sum = 0;
+           
             Int32.TryParse(a.ToString(), out aToInt);
 
             float[] w = new float[aToInt + 1];
 
-            for (int i = 1; i <= 20; i++)
+            for (nint i = 1; i <= w.Length; i++)
             {
                 w[i] = i;
-                sum += 1 / w[i];
+                sum += 1 / i;
                 Console.WriteLine($"{i} :{w[i]} {1 / w[i]} ");
             }
             Console.WriteLine($"Sum: {sum} ");

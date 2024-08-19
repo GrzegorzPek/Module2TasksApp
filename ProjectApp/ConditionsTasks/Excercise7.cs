@@ -25,11 +25,11 @@ namespace ProjectApp.ConditionsTasks
             int cToInt;
             Int32.TryParse(c.ToString(), out cToInt);
 
-            if ((aToInt > bToInt) && (aToInt > cToInt))
+            if ((aToInt >= bToInt) && (aToInt >= cToInt))
             {
                 Console.WriteLine($"The number {aToInt} is the bigest number ");
             }
-            else if ((bToInt > aToInt) && (bToInt > cToInt))
+            else if ((bToInt > aToInt) && (bToInt >= cToInt))
             {
                 Console.WriteLine($"The number {bToInt} is the bigest number ");
             }

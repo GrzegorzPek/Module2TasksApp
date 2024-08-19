@@ -15,7 +15,11 @@ namespace ProjectApp.ConditionsTasks
             int aToInt;
             Int32.TryParse(a.ToString(), out aToInt);
 
-            if (aToInt >= 0)
+            if (aToInt == 0)
+            {
+                Console.WriteLine($"{aToInt} ism't positive number and ism't negative number ");
+            }
+            else if (aToInt > 0)
             {
                 Console.WriteLine($"{aToInt} is positive number");
             }

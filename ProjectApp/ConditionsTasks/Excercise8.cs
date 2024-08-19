@@ -23,9 +23,11 @@ namespace ProjectApp.ConditionsTasks
             int cToInt;
             Int32.TryParse(c.ToString(), out cToInt);
 
-            if ((aToInt > 70) && (bToInt > 55) && (cToInt > 45)) ;
-            else
-            if ((aToInt + bToInt > 150) && (cToInt == 0) || (aToInt + cToInt > 150) && (cToInt == 0))
+            if ((aToInt > 70) && (bToInt > 55) && (cToInt > 45))
+            {
+                Console.WriteLine("candidate admitted to recruitment");
+            }
+            else if ((aToInt + bToInt > 150) && (cToInt == 0) || (aToInt + cToInt > 150) && (bToInt == 0))
             {
                 Console.WriteLine("candidate admitted to recruitment");
             }

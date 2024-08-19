@@ -15,7 +15,7 @@ namespace ProjectApp.ConditionsTasks
             int year;
             Int32.TryParse(a.ToString(), out year);
 
-            if ((year % 4 == 0) && !((year % 100) == 0) && (year % 400) != 0)
+            if ((year % 4 == 0) && ((year % 100) != 0) || (year % 400) == 0)
             {
                 Console.WriteLine($"{year} is a leap year");
             }
